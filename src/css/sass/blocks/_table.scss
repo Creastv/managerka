@@ -1,0 +1,21 @@
+.tab-it{
+    margin-bottom: 30px;
+    overflow: auto;
+    table{
+        width: 100%;
+        a{
+            display: block;
+            box-shadow: none!important;
+            text-align: center;
+            padding: 5px 10px;
+        }
+        tr{
+            td{
+                &:first-child{
+                    text-align: left!important;
+                    font-weight:600;
+                }
+            }
+        }
+    }
+}

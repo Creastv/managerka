@@ -1,0 +1,23 @@
+.wy-posty {
+  width: 100vw;
+  margin-left: -50vw;
+  left: 50%;
+  position: relative;
+  margin-bottom: 30px;
+  .wy-posty-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    .con-publikacje {
+      width: 25%;
+      @media #{$sm} {
+        width: 50%;
+      }
+      @media #{$xxs} {
+        width: 100%;
+      }
+      .wrap {
+        height: 100%;
+      }
+    }
+  }
+}

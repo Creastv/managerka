@@ -1,0 +1,203 @@
+.page-template-uslugi,
+.page-template-no-title-form {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    @media #{$sm} {
+      flex-wrap: wrap;
+    }
+    article.left {
+      width: 70%;
+      padding-right: 50px;
+      @media #{$sm} {
+        width: 100%;
+        padding-right: 0;
+      }
+      .thumbnail {
+        margin-bottom: 50px;
+        position: relative;
+        padding: 0 15px;
+        img {
+          // width: 100%;
+          // height: auto;
+          width: 100%;
+          height: auto; //static
+          // object-fit: cover;
+          border-radius: 10px;
+          box-shadow: 0px 10px 19px 0px rgba(0, 0, 0, 0.1);
+        }
+        .ornament-point {
+          position: absolute;
+          background-color: #fff;
+          box-shadow: 0px 10px 19px 0px rgba(0, 0, 0, 0.1);
+          border-radius: 3px;
+          padding: 10px;
+          width: 34px;
+          height: 34px;
+          right: 0px;
+          top: 10%;
+          &:before {
+            content: "";
+            width: 12px;
+            height: 12px;
+            border-radius: 100%;
+            background-color: $main;
+            position: absolute;
+          }
+        }
+        .ornament-mpoint {
+          position: absolute;
+          background-color: #fff;
+          box-shadow: 0px 10px 19px 0px rgba(0, 0, 0, 0.1);
+          border-radius: 3px;
+          padding: 10px;
+          width: 50px;
+          height: 50px;
+          left: -10px;
+          top: 50%;
+          svg {
+            width: 100%;
+          }
+        }
+        .ornament-m {
+          position: absolute;
+          bottom: 0px;
+          left: 85px;
+          font-weight: 900;
+          color: $main;
+          &:before {
+            content: "";
+            width: 40px;
+            height: 2px;
+            background-color: $main;
+            position: absolute;
+            left: -50px;
+            bottom: 4px;
+          }
+          span {
+            color: $p;
+          }
+        }
+        .mana {
+          left: 0px;
+          bottom: 0;
+          position: absolute;
+          padding: 0 40px;
+          margin-bottom: -5%;
+        }
+      }
+      .cta {
+        margin-bottom: 30px;
+        padding: 0px 15px;
+        display: none;
+
+        @media #{$sm} {
+          display: block;
+          text-align: right;
+        }
+        @media #{$xxs} {
+          text-align: center;
+        }
+
+        .btn {
+          @media #{$xxs} {
+            display: block;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    aside.right {
+      width: 30%;
+      @media #{$sm} {
+        width: 100%;
+      }
+      .fixed {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 100px;
+        margin-bottom: 53px;
+      }
+      #form-oferta {
+        background: #fff;
+        padding: 20px;
+        margin-bottom: 50px;
+        border-radius: 10px;
+        box-shadow: 0px 10px 19px 0px rgba(0, 0, 0, 0.1);
+        .header {
+          margin-bottom: 10px;
+          p,
+          h3 {
+            margin-bottom: 0px;
+          }
+        }
+        .form-group {
+          position: relative;
+        }
+        textarea {
+          height: 103px;
+        }
+        input {
+          max-height: 35px !important;
+        }
+        .wpcf7-acceptance {
+          margin: 1rem 0;
+          display: block;
+        }
+        .wpcf7-acceptance .wpcf7-list-item {
+          margin: 0px;
+        }
+        .wpcf7-acceptance label {
+          display: flex !important;
+        }
+        .wpcf7-acceptance .wpcf7-list-item-label {
+          font-size: 0.55rem !important;
+          display: block;
+        }
+        .btn-main {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.poz-uslugi {
+  width: 100vw;
+  margin-left: -50vw;
+  left: 50%;
+  position: relative;
+  @include grad;
+  padding: 50px 0 0;
+  margin-top: 50px;
+  // margin-top: 50px;
+  .car-uslugi {
+    padding: 50px 0;
+    .wrap {
+      h2 {
+        // min-height: 68px;
+        display: flex;
+        min-height: 58px;
+        a{
+              font-size: 1rem;
+              align-self: center;
+        }
+      }
+    }
+  }
+  .desc {
+    display: flex;
+    align-items: center;
+    .left {
+      flex: auto;
+      p {
+        margin: 0;
+      }
+    }
+    .right {
+      position: relative;
+      width: 100px;
+    }
+  }
+}

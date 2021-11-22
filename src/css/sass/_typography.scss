@@ -1,0 +1,163 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  padding: 0;
+  margin: 0;
+  margin: 0 0 18px;
+  color: $head;
+}
+ul {
+  color: $p;
+}
+
+p{
+  margin-bottom: 1.5em;
+  margin-top: 0;
+  color: $p;
+  line-height: 1.6;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  // text-align: justify;
+  font-weight: 400;
+}
+b,
+strong {
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+  color: $main;
+  transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+}
+
+.widget-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.page-title {
+  text-transform: uppercase;
+  color: $black;
+  position: relative;
+  @media #{$sm} {
+    font-size: 1.5rem;
+  }
+}
+
+.page-content {
+  figure {
+    @media #{$xs} {
+      width: 100%;
+      height: auto;
+    }
+    img {
+      @media #{$xs} {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.entry-content {
+  // padding-left: 15px;
+  // padding-right: 15px;
+  li{
+    margin-bottom: 3px;
+    margin-top: 0;
+    color: $p;
+    line-height: 1.6;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    // text-align: justify;
+    font-weight: 400;
+  }
+  ul{
+    li{
+      position: relative;
+      &:before{
+        content:"";
+        position:absolute;
+        width: 8px;
+        height: 8px;
+        background-color: $main;
+        border-radius: 100%;
+        left: -18px;
+        top: 10px;
+      }
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    position: relative;
+    padding: 10px 0;
+    padding-left: 50px;
+    // &:after {
+    //   content: "";
+    //   position: absolute;
+    //   z-index: -1;
+    //   height: 100%;
+    //   width: 65px;
+    //   left: -15px;
+    //   top: 0;
+    //   background-color: #f0f0f0;
+    // }
+     &:before {
+      content: "";
+      position: absolute;
+      
+      background-color: #fff;
+      box-shadow: 0px 10px 19px 0px rgba(0, 0, 0, .10);
+      border-radius: 3px;
+      padding: 10px;
+      width: 34px;
+      height: 34px;
+      left: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+     &:after {
+      content: "";
+      position: absolute;
+        width: 12px;
+        height: 12px;
+        left:11px;
+        border-radius: 100%;
+        background-color: #a50404;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+     }
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+  text-align: right;
+}
+.justify-content-center {
+  justify-content: center;
+  text-align: center;
+}
+.justify-content-start {
+  justify-content: flex-start;
+}

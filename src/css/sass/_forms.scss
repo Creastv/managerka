@@ -1,0 +1,231 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+select,
+textarea {
+  font-family: "Montserrat", sans-serif;
+  color: #999999;
+  border: 1px solid darken($gray, 10);
+  background-color: #fdfdfd;
+  font-weight: 400;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 15px;
+  box-shadow: none;
+  border-radius: 6px;
+  outline: 0;
+  width: 100%;
+  &:focus {
+    border: 1px solid darken($gray, 50);
+    box-shadow: 0px 0px 2px 3px rgba(202, 202, 202, 1);
+  }
+}
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 10px;
+}
+input[type="checkbox"] {
+  min-height: 0px;
+}
+
+.inputs-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  margin-bottom: 1.5em;
+
+  label {
+    width: 50%;
+    padding-right: 10px;
+    &:last-child {
+      padding-left: 10px;
+    }
+  }
+}
+textarea {
+  width: 100% !important;
+  outline: none;
+  border-top: 1px solid darken($gray, 8);
+  border-radius: 6px;
+  background: #fdfdfd !important;
+  display: block !important;
+  padding: 12px 20px 3px !important;
+  max-width: 100% !important;
+}
+span .wpcf7-not-valid {
+  border: 1px solid #ff0000 !important;
+}
+.wpcf7-form {
+  p {
+    margin-bottom: 5px;
+  }
+  label {
+    font-size: 13px;
+  }
+  .wpcf7-list-item-label {
+    font-size: 13px;
+  }
+  sup {
+    color: red;
+  }
+
+  input,
+  textarea {
+    margin-top: 5px;
+  }
+  .sub {
+    text-align: right;
+  }
+  .wpcf7-submit {
+    text-transform: uppercase;
+    color: #fff;
+    background: rgb(199, 1, 49);
+    background: linear-gradient(
+      212deg,
+      rgba(199, 1, 49, 1) 0%,
+      rgba(135, 0, 33, 1) 100%
+    );
+    box-shadow: 0px 16px 26px 0px rgba(0, 0, 0, 0.24);
+    font-size: 1rem;
+    @include trans;
+    padding: 10px 30px;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    border: none;
+    &:hover {
+      color: #fff;
+      box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.4);
+      svg {
+        opacity: 0.2;
+        transform: translate(15px, 0px);
+      }
+    }
+    &:active {
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    }
+    &:focus {
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+      svg {
+        opacity: 0.2;
+      }
+    }
+  }
+  label {
+    display: block !important;
+  }
+  .ajax-loader,
+  .wpcf7-spinner {
+    position: absolute;
+    right: 0;
+    transform: translate(0, -50%);
+    top: 50%;
+    margin: 3px;
+  }
+}
+.screen-reader-response {
+  display: none;
+  p {
+    // background: red;
+    // padding: 3px 20px;
+    border-radius: 5px;
+    color: #fff;
+    // padding: 20px;
+    border-radius: 10px;
+    // border: 1px solid #e4e4e4;
+    // background: #f8f8f8;
+    margin-bottom: 30px;
+    // box-shadow: 0 0 20px 0 rgba(0,0,0,0.15);
+    opacity: 0.6;
+  }
+  li {
+    color: red;
+  }
+}
+
+.wpcf7-not-valid-tip {
+  color: red;
+  font-size: 9px;
+  margin-top: 5px;
+}
+.wpcf7 form .wpcf7-response-output {
+  margin: 1rem 0;
+  border-radius: 10px;
+  padding: 1rem;
+  border: 1px solid #00a0d2;
+  font-size: 13px;
+}
+
+.newsletter-wrap {
+  position: relative;
+  display: flex;
+  text-combine-upright: 30px;
+  margin-bottom: 10px;
+  align-items: flex-start;
+  @media #{$md} {
+    flex-wrap: wrap;
+  }
+  @media #{$sm} {
+    flex-wrap: initial;
+  }
+  input[type="email"] {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  input[type="submit"] {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+  }
+}
+.show-less {
+  height: 55px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  position: relative;
+  @include trans;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 34px;
+    bottom: 0;
+    left: 0;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    @include trans;
+  }
+}
+.show-more {
+  height: auto;
+  &:after {
+    height: 0px;
+  }
+}
+.toggle-show {
+  cursor: pointer;
+  font-size: 13px;
+  color: $main;
+  float: right;
+  margin-top: -30px;
+  &:hover {
+    color: darken($main, 10%);
+  }
+}
+input {
+  min-height: 50px;
+}

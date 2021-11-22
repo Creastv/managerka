@@ -1,0 +1,121 @@
+.page-content-single {
+  .page-main-content {
+    .entry-post-feature {
+      margin-bottom: 31px;
+      img {
+        border-radius: 5px;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .thumbnail {
+      margin-bottom: 30px;
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        // box-shadow: 0 0 40px 5px rgba(51, 51, 51, .20);
+      }
+    }
+
+    .entry-title {
+      font-size: 2.2rem;
+      font-weight: 900;
+      line-height: 1.42;
+      margin: 0 0 16px;
+      word-wrap: break-word;
+      @media #{$xs} {
+        font-size: 21px;
+        line-height: initial;
+      }
+    }
+    .entry-footer {
+      color: $black;
+      font-weight: 700;
+      margin: 50px 0;
+      padding: 20px 0px;
+      border-bottom: 1px solid darken($gray, 8);
+      border-top: 1px solid darken($gray, 8);
+      a {
+        font-weight: 400;
+        color: $main;
+      }
+      .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media #{$xs} {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}
+.entry-post-categories {
+  margin-bottom: 15px;
+  a {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    // letter-spacing: 5px;
+    margin-bottom: 9px;
+    color: $main;
+    &:hover {
+      color: darken($main, 10);
+    }
+  }
+}
+
+.entry-post-meta {
+  font-size: 16px;
+  margin: 0 -8px;
+  margin-bottom: 20px;
+  color: $main;
+  a {
+    color: $main;
+    &:hover {
+      color: darken($main, 10);
+    }
+  }
+  .far {
+    color: $black !important;
+  }
+  div {
+    display: inline-block;
+    padding: 0 8px;
+  }
+}
+#author-bio {
+  padding: 20px;
+  background: #fff;
+  border-radius: 6px;
+  margin: 20px 0px;
+  box-shadow: 0 0 40px 5px rgba(51, 51, 51, 0.1);
+  display: flex;
+  .author-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .links {
+      a {
+        margin: 3px;
+      }
+    }
+    h2 {
+      margin: 0;
+      a {
+        font-size: 21px;
+      }
+    }
+  }
+  img {
+    border-radius: 100%;
+    margin-right: 15px;
+  }
+  p {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+}
